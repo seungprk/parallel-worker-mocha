@@ -1,5 +1,5 @@
 if (window.Worker) {
-  var myWorker = new Worker('worker.js');
+  var myWorker = new Worker('src/worker.js');
   var div = document.querySelector('.result');
 
   myWorker.postMessage('hello!');
